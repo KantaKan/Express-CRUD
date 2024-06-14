@@ -10,7 +10,7 @@ export const GetAllProduct = async (req, res) => {
     } }
 
 
-export const GetAproduct  = async (req, res) => {
+export const GetProduct  = async (req, res) => {
     try {
       const { id } = req.params;
       const product = await Product.findById(id);
