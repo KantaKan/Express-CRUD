@@ -11,9 +11,6 @@ import mongoose, { mongo } from "mongoose";
  *         - quantity
  *         - price
  *       properties:
- *         id:
- *           type: string
- *           description: The auto-generated id of the product
  *         name:
  *           type: string
  *           description: Name of the product
