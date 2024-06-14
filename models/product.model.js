@@ -30,14 +30,6 @@ import mongoose, { mongo } from "mongoose";
  *           type: string
  *           description: URL of the product image
  *           example: "http://example.com/image.png"
- *         createdAt:
- *           type: string
- *           format: date-time
- *           description: Timestamp of when the product was created
- *         updatedAt:
- *           type: string
- *           format: date-time
- *           description: Timestamp of when the product was last updated
  */
 
 const ProductSchema = new mongoose.Schema(
