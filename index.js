@@ -5,6 +5,9 @@ import dotenv from "dotenv"
 import "dotenv/config";
 import swaggerJsDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
+import cors from "cors";
+
+app.use(cors());
 
 const app = express();
 import Product from "./models/product.model.js";
