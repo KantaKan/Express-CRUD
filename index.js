@@ -7,16 +7,10 @@ import swaggerJsDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 import cors from "cors";
 
-app.use(cors());
 
 const app = express();
-app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  res.setHeader('Access-Control-Allow-Credentials', false);
-  next();
-});
+app.use(cors());
+
 import Product from "./models/product.model.js";
 dotenv.config();
 app.use(express.json());
