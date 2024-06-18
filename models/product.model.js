@@ -10,6 +10,7 @@ import mongoose, { mongo } from "mongoose";
  *         - name
  *         - quantity
  *         - price
+ *         - description
  *       properties:
  *         name:
  *           type: string
@@ -23,6 +24,10 @@ import mongoose, { mongo } from "mongoose";
  *           type: number
  *           description: Price of the product
  *           example: 99.99
+ *         description:
+ *            type: string
+ *            description : description
+ *            example : "description"
  *         image:
  *           type: string
  *           description: URL of the product image
@@ -48,6 +53,10 @@ const ProductSchema = new mongoose.Schema(
     image: {
       type: String,
       required: false,
+    },
+    description: {
+      type: String,
+      requred: true,
     },
   },
   {
